@@ -1,0 +1,160 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    background: #212529;
+}
+
+h1 {
+    text-align: center;
+    color: #6c757d;
+}
+
+span {
+    color: #a7c957;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+#kirjautuminen, #rekisterointi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #343a40;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 250px;
+    box-shadow: 0 0 5px #6c757d;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#kirjautuminen input, #rekisterointi input {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#kirjautuminen:hover, #rekisterointi:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #a7c957;
+}
+
+#uusi_kayttaja_nappi {
+    display: block;
+    margin: 20px auto;
+}
+
+#ilmoitus {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #a7c957;
+    color: #212529;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+#ilmoitus.virhe {
+    background: #dc3545;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+h2 {
+    color: #6c757d;
+}
+
+#yllapitaja_tyokalut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    background: #343a40;
+    padding: 15px 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 5px #6c757d;
+}
+
+#yllapitaja_tyokalut input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#aanestys_lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.aanestys_laatikko {
+    background: #343a40;
+    color: #a7c957;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 5px #6c757d;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.aanestys_laatikko:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #a7c957;
+}
+
+.aanestys_laatikko h3 {
+    margin-top: 0;
+}
+
+.vaihtoehto {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.vaihtoehto:hover {
+    cursor: pointer;
+}
+
+.tulos_palkki {
+    height: 20px;
+    background: #a7c957;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+button {
+    background: #a7c957;
+    color: #212529;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+    background: #8fbf47;
+    transform: scale(1.05);
+}

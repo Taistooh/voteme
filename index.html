@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote me!</title>
+    <link rel="stylesheet" href="tyylit.css">
+</head>
+
+<body>
+    <div id="ilmoitus" style="display: none;"></div>
+
+    <header>
+        <h1><span>Vote me!</span>-äänestyssovellus</h1>
+    </header>
+
+    <div id="wrapper">
+        <div id="kirjautuminen">
+            <input type="text" id="kayttajatunnus" placeholder="Käyttäjätunnus">
+            <input type="password" id="salasana" placeholder="Salasana">
+            <button id="kirjaudu_nappi">Kirjaudu</button>
+            <button id="kirjaudu_ulos" style="display: none;">Kirjaudu ulos</button>
+        </div>
+
+        <div id="rekisterointi">
+            <input type="text" id="uusi_tunnus" placeholder="Uusi käyttäjätunnus">
+            <input type="password" id="uusi_salasana" placeholder="Uusi salasana">
+            <button id="rekisteroi_nappi">Rekisteröidy ylläpitäjäksi!</button>
+        </div>
+    </div>
+
+    <button id="uusi_kayttaja_nappi">Uusi käyttäjä</button>
+
+    <div id="yllapitaja_tyokalut" style="display: none;">
+        <h2>Luo uusi äänestys</h2>
+        <input type="text" id="kysymys" placeholder="Kysymys">
+        <input type="text" id="vaihtoehto1" placeholder="Vaihtoehto 1">
+        <input type="text" id="vaihtoehto2" placeholder="Vaihtoehto 2">
+        <input type="text" id="vaihtoehto3" placeholder="Vaihtoehto 3">
+        <input type="text" id="vaihtoehto4" placeholder="Vaihtoehto 4">
+        <button id="luo_aanestys">Luo äänestys</button>
+    </div>
+    
+    <div id="aanestys_lista"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
